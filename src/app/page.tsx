@@ -101,7 +101,7 @@ export default function TVRepairLanding() {
                 <div className="text-sm sm:text-lg lg:text-xl font-black text-slate-800 truncate">
                   In-Home TV Repair
                 </div>
-                <div className="text-xs text-cyan-600 font-semibold">
+                <div className="text-xs font-semibold" style={{color: '#FF5722'}}>
                   We Come to You!
                 </div>
               </div>
@@ -113,7 +113,10 @@ export default function TVRepairLanding() {
                 const contactSection = document.getElementById('contact');
                 contactSection?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="flex items-center justify-center bg-cyan-600 hover:bg-cyan-700 active:bg-cyan-800 text-white font-bold py-2.5 px-4 sm:py-3 sm:px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base whitespace-nowrap flex-shrink-0 ml-2"
+              className="flex items-center justify-center text-white font-bold py-2.5 px-4 sm:py-3 sm:px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base whitespace-nowrap flex-shrink-0 ml-2"
+              style={{backgroundColor: '#FF5722'}} 
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E64A19'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#FF5722'}
             >
               <span className="hidden sm:inline">Request Callback</span>
               <span className="sm:hidden">Get Quote</span>
@@ -122,18 +125,18 @@ export default function TVRepairLanding() {
         </div>
         
         {/* Mobile Info Bar */}
-        <div className="bg-cyan-50 border-t border-cyan-100 py-2 px-3 sm:hidden">
+        <div className="border-t py-2 px-3 sm:hidden" style={{backgroundColor: '#FFF3E0', borderColor: '#FFCCBC'}}>
           <div className="flex items-center justify-center space-x-4 text-xs text-slate-700">
             <div className="flex items-center space-x-1">
-              <CheckCircleIcon className="w-4 h-4 text-cyan-600" />
+              <CheckCircleIcon className="w-4 h-4" style={{color: '#FF5722'}} />
               <span>Same-Day</span>
             </div>
             <div className="flex items-center space-x-1">
-              <CheckCircleIcon className="w-4 h-4 text-cyan-600" />
+              <CheckCircleIcon className="w-4 h-4" style={{color: '#FF5722'}} />
               <span>All Brands</span>
             </div>
             <div className="flex items-center space-x-1">
-              <CheckCircleIcon className="w-4 h-4 text-cyan-600" />
+              <CheckCircleIcon className="w-4 h-4" style={{color: '#FF5722'}} />
               <span>90-Day Warranty</span>
             </div>
           </div>
@@ -141,7 +144,7 @@ export default function TVRepairLanding() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-cyan-50 to-white py-20">
+      <section className="bg-gradient-to-br to-white py-20" style={{background: 'linear-gradient(to bottom right, #FFF3E0, white)'}}>
         <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -150,11 +153,11 @@ export default function TVRepairLanding() {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
-                Professional <span className="text-cyan-600">In-Home TV Repair & Installation</span> in Charlotte, NC
+                Professional <span style={{color: '#FF5722'}}>In-Home TV Repair & Installation</span> in Charlotte, NC
               </h1>
               
               {/* IN-HOME Service Badge - Mobile Optimized */}
-              <div className="inline-flex flex-col sm:flex-row items-center sm:space-x-2 bg-cyan-100 border-2 border-cyan-600 text-cyan-800 font-bold py-3 px-4 sm:px-6 rounded-lg mb-4 sm:mb-6 w-full sm:w-auto">
+              <div className="inline-flex flex-col sm:flex-row items-center sm:space-x-2 border-2 font-bold py-3 px-4 sm:px-6 rounded-lg mb-4 sm:mb-6 w-full sm:w-auto" style={{backgroundColor: '#FFF3E0', borderColor: '#FF5722', color: '#D84315'}}>
                 <div className="flex items-center space-x-2 mb-1 sm:mb-0">
                   <span className="text-2xl">🏠</span>
                   <span className="text-base sm:text-lg">WE COME TO YOUR HOME</span>
@@ -167,25 +170,28 @@ export default function TVRepairLanding() {
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center space-x-2 text-slate-700">
-                  <CheckCircleIcon className="w-6 h-6 text-cyan-600" />
+                  <CheckCircleIcon className="w-6 h-6" style={{color: '#FF5722'}} />
                   <span>In-Home Service</span>
                 </div>
                 <div className="flex items-center space-x-2 text-slate-700">
-                  <CheckCircleIcon className="w-6 h-6 text-cyan-600" />
+                  <CheckCircleIcon className="w-6 h-6" style={{color: '#FF5722'}} />
                   <span>Same-Day Available</span>
                 </div>
                 <div className="flex items-center space-x-2 text-slate-700">
-                  <CheckCircleIcon className="w-6 h-6 text-cyan-600" />
+                  <CheckCircleIcon className="w-6 h-6" style={{color: '#FF5722'}} />
                   <span>All Brands</span>
                 </div>
                 <div className="flex items-center space-x-2 text-slate-700">
-                  <CheckCircleIcon className="w-6 h-6 text-cyan-600" />
+                  <CheckCircleIcon className="w-6 h-6" style={{color: '#FF5722'}} />
                   <span>90-Day Warranty</span>
                 </div>
               </div>
               <a
                 href="#contact"
-                className="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
+                className="inline-block text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
+                style={{backgroundColor: '#FF5722'}}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E64A19'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#FF5722'}
               >
                 Get Free Quote
               </a>
@@ -236,7 +242,7 @@ export default function TVRepairLanding() {
               'Audio problems'
             ].map((issue, index) => (
               <div key={index} className="flex items-start space-x-3 bg-slate-50 rounded-lg p-4 border border-slate-200">
-                <CheckCircleIcon className="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" />
+                <CheckCircleIcon className="w-6 h-6 flex-shrink-0 mt-1" style={{color: '#FF5722'}} />
                 <span className="text-slate-700">{issue}</span>
               </div>
             ))}
@@ -252,14 +258,14 @@ export default function TVRepairLanding() {
               Why Choose In-Home Service?
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              <span className="font-bold text-cyan-600">We come to you!</span> No need to disconnect, transport, or wait in repair shops.
+              <span className="font-bold" style={{color: '#FF5722'}}>We come to you!</span> No need to disconnect, transport, or wait in repair shops.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <ClockIcon className="w-10 h-10 text-cyan-600" />
+                <ClockIcon className="w-10 h-10" style={{color: '#FF5722'}} />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Same-Day Service</h3>
               <p className="text-slate-600">
@@ -269,7 +275,7 @@ export default function TVRepairLanding() {
 
             <div className="text-center">
               <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <ShieldCheckIcon className="w-10 h-10 text-cyan-600" />
+                <ShieldCheckIcon className="w-10 h-10" style={{color: '#FF5722'}} />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">90-Day Warranty</h3>
               <p className="text-slate-600">
@@ -279,7 +285,7 @@ export default function TVRepairLanding() {
 
             <div className="text-center">
               <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <WrenchScrewdriverIcon className="w-10 h-10 text-cyan-600" />
+                <WrenchScrewdriverIcon className="w-10 h-10" style={{color: '#FF5722'}} />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Expert Technicians</h3>
               <p className="text-slate-600">
@@ -289,7 +295,7 @@ export default function TVRepairLanding() {
 
             <div className="text-center">
               <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <PhoneIcon className="w-10 h-10 text-cyan-600" />
+                <PhoneIcon className="w-10 h-10" style={{color: '#FF5722'}} />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">In-Home Service</h3>
               <p className="text-slate-600">
@@ -325,10 +331,12 @@ export default function TVRepairLanding() {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 sm:py-4 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 text-base sm:text-lg transition-all"
+                  className="w-full px-4 py-3 sm:py-4 border-2 border-slate-300 rounded-lg focus:ring-2 text-base sm:text-lg transition-all"
                   placeholder="Your full name"
                   disabled={isSubmitting}
                   autoComplete="name"
+                  onFocus={(e) => {e.target.style.borderColor = '#FF5722'; e.target.style.boxShadow = '0 0 0 2px rgba(255, 87, 34, 0.2)'}}
+                  onBlur={(e) => {e.target.style.borderColor = '#cbd5e1'; e.target.style.boxShadow = 'none'}}
                 />
               </div>
               
@@ -344,11 +352,13 @@ export default function TVRepairLanding() {
                   onChange={handleInputChange}
                   required
                   maxLength={14}
-                  className="w-full px-4 py-3 sm:py-4 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 text-base sm:text-lg transition-all"
+                  className="w-full px-4 py-3 sm:py-4 border-2 border-slate-300 rounded-lg focus:ring-2 text-base sm:text-lg transition-all"
                   placeholder="(XXX) XXX-XXXX"
                   disabled={isSubmitting}
                   autoComplete="tel"
                   inputMode="numeric"
+                  onFocus={(e) => {e.target.style.borderColor = '#FF5722'; e.target.style.boxShadow = '0 0 0 2px rgba(255, 87, 34, 0.2)'}}
+                  onBlur={(e) => {e.target.style.borderColor = '#cbd5e1'; e.target.style.boxShadow = 'none'}}
                 />
               </div>
               
@@ -356,7 +366,10 @@ export default function TVRepairLanding() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-cyan-600 hover:bg-cyan-700 active:bg-cyan-800 disabled:bg-cyan-400 text-white font-bold text-base sm:text-lg py-4 sm:py-5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl disabled:shadow-none"
+                  className="w-full text-white font-bold text-base sm:text-lg py-4 sm:py-5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl disabled:shadow-none"
+                  style={{backgroundColor: isSubmitting ? '#FFAB91' : '#FF5722'}}
+                  onMouseEnter={(e) => !isSubmitting && (e.currentTarget.style.backgroundColor = '#E64A19')}
+                  onMouseLeave={(e) => !isSubmitting && (e.currentTarget.style.backgroundColor = '#FF5722')}
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center">
