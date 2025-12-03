@@ -113,3 +113,13 @@
 .scrollbar-hide::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }
+
+/* Carousel animation */
+@keyframes scroll-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
+
+.carousel-scroll {
+  animation: scroll-right 25s linear infinite;
+}
