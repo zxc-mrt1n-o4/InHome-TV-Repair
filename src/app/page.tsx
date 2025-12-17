@@ -206,7 +206,7 @@ export default function TVRepairLanding() {
                 </a>
                 <div className="flex items-center justify-center space-x-2 py-4 px-6 bg-white border border-slate-200 rounded-xl text-slate-700 font-semibold shadow-sm">
                   <StarIcon className="w-5 h-5 text-yellow-400" />
-                  <span>5/5 Average Rating</span>
+                  <span>5 Star Average Rating</span>
                 </div>
               </div>
 
