@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://inhometvrepair.com'),
+  metadataBase: new URL('https://clt-tp.com'),
   title: 'In-Home TV Repair & Installation Charlotte NC | We Come to You',
   description: 'Professional in-home TV repair and installation services in Charlotte, NC. We come to you! No need to unplug or move your TV. Fix all brands - power issues, connectivity, smart TV setup, wall mounting. Same-day service available.',
   keywords: 'in-home TV repair, TV installation, TV repair Charlotte NC, television repair at home, on-site TV repair, power board repair, HDMI repair, smart TV repair, TV wall mounting, Samsung TV repair, LG TV repair, Sony TV repair',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: 'Expert in-home TV repair and installation services in Charlotte, NC. We come directly to you! All brands serviced. Same-day appointments available. Licensed & insured technicians.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://inhometvrepair.com',
+    url: 'https://clt-tp.com',
     siteName: 'In-Home TV Repair & Installation',
     images: [
       {
@@ -68,9 +68,9 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "In-Home TV Repair & Installation",
-            "image": "https://inhometvrepair.com/services/tv-repair.jpg",
-            "@id": "https://inhometvrepair.com",
-            "url": "https://inhometvrepair.com",
+            "image": "https://clt-tp.com/services/tv-repair.jpg",
+            "@id": "https://clt-tp.com",
+            "url": "https://clt-tp.com",
             "telephone": "+19809870005",
             "priceRange": "$$",
             "address": {
