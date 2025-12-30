@@ -101,7 +101,7 @@ export default function TVRepairLanding() {
     {
       name: 'Sarah Jenkins',
       location: 'South Charlotte',
-      text: 'Absolutely amazing service! They came to my house the same day I called. Fixed my LG OLED screen issue in under an hour. Highly recommend!',
+      text: 'Absolutely amazing service! They came to my house the same day I called. Fixed my LG OLED display issue in under an hour. Highly recommend!',
       rating: 5
     },
     {
@@ -279,7 +279,7 @@ export default function TVRepairLanding() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'Screen not turning on / Black screen',
+              'TV not turning on / Black screen',
               'No picture, but has sound',
               'No sound, but has picture',
               'HDMI / Port connection failing',

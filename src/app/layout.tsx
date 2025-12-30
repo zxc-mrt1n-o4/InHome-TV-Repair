@@ -11,7 +11,7 @@ if (typeof window === 'undefined') {
   });
 }
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
@@ -19,17 +19,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://clt-tp.com'),
   title: 'In-Home TV Repair & Installation Charlotte NC | We Come to You',
-  description: 'Professional in-home TV repair and installation services in Charlotte, NC. We come to you! No need to unplug or move your TV. Fix all brands - screen issues, connectivity, smart TV setup, wall mounting. Same-day service available.',
-  keywords: 'in-home TV repair, TV installation, TV repair Charlotte NC, television repair at home, on-site TV repair, screen repair, HDMI repair, smart TV repair, TV wall mounting, Samsung TV repair, LG TV repair, Sony TV repair',
+  description: 'Professional in-home TV repair and installation services in Charlotte, NC. We come to you! No need to unplug or move your TV. Fix all brands - power issues, connectivity, smart TV setup, wall mounting. Same-day service available.',
+  keywords: 'in-home TV repair, TV installation, TV repair Charlotte NC, television repair at home, on-site TV repair, power board repair, HDMI repair, smart TV repair, TV wall mounting, Samsung TV repair, LG TV repair, Sony TV repair',
   authors: [{ name: 'In-Home TV Repair & Installation' }],
   robots: 'index, follow',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'In-Home TV Repair & Installation Charlotte NC | We Come to You',
     description: 'Expert in-home TV repair and installation services in Charlotte, NC. We come directly to you! All brands serviced. Same-day appointments available. Licensed & insured technicians.',
     type: 'website',
     locale: 'en_US',
+    url: 'https://clt-tp.com',
     siteName: 'In-Home TV Repair & Installation',
+    images: [
+      {
+        url: '/services/tv-repair.jpg', // Ensure this image exists or use a valid one
+        width: 1200,
+        height: 630,
+        alt: 'In-Home TV Repair Technician in Charlotte',
+      },
+    ],
   },
   // Local Business Schema
   other: {
@@ -48,7 +61,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <head>
-
         {/* Local Business Schema for Google Business */}
         <Script id="local-business-schema" type="application/ld+json" strategy="afterInteractive">
           {`
@@ -89,14 +101,13 @@ export default function RootLayout({
                 "closes": "21:00"
               }
             ],
-            "sameAs": [],
             "areaServed": {
               "@type": "City",
               "name": "Charlotte",
               "@id": "https://www.wikidata.org/wiki/Q16565"
             },
             "serviceType": "TV Repair & Installation",
-            "description": "Professional TV repair and installation services in Charlotte, NC. We fix all brands - screen issues, connectivity problems, smart TV setup, and professional mounting. Same-day service available.",
+            "description": "Professional TV repair and installation services in Charlotte, NC. We fix all brands - power issues, connectivity problems, smart TV setup, and professional mounting. Same-day service available.",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "TV Repair Services",
@@ -105,8 +116,16 @@ export default function RootLayout({
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "TV Screen Repair",
-                    "description": "Repair for cracked or damaged TV screens"
+                    "name": "TV Power Issue Repair",
+                    "description": "Diagnosis and repair of power cycling or no-power issues"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Main Board Replacement",
+                    "description": "Expert replacement of faulty internal components"
                   }
                 },
                 {
@@ -130,7 +149,7 @@ export default function RootLayout({
           }
           `}
         </Script>
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
