@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-    const baseUrl = 'https://clt-tp.com';
+    const baseUrl = 'https://inhometvrepair.com';
     const lastModified = new Date().toISOString();
 
     // Define your routes here

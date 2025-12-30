@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://clt-tp.com/sitemap.xml', // Update with your actual domain
+    sitemap: 'https://inhometvrepair.com/sitemap.xml',
   };
 }
