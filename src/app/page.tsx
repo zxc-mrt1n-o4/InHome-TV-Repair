@@ -124,13 +124,22 @@ export default function TVRepairLanding() {
       <header className="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50">
         <div className="w-full px-4 max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <div className="flex-1">
-              <div className="text-xl md:text-2xl font-black text-slate-800 tracking-tight">
-                TV Repair Charlotte
+            <div className="flex-1 flex items-center space-x-3">
+              <div className="relative w-12 h-12 flex-shrink-0">
+                <Image
+                  src="/icon.svg"
+                  alt="In-Home TV Repair Icon"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <div className="flex items-center space-x-1 text-sm font-bold text-primary">
-                <HomeIcon className="w-4 h-4" />
-                <span>We Come to You!</span>
+              <div>
+                <div className="text-xl md:text-2xl font-black text-slate-800 tracking-tight leading-none">
+                  inHome
+                </div>
+                <div className="text-sm md:text-base font-black text-slate-800 tracking-tight leading-none mt-0.5 uppercase">
+                  TV Repair
+                </div>
               </div>
             </div>
 
@@ -204,16 +213,15 @@ export default function TVRepairLanding() {
                   <PhoneIcon className="w-6 h-6" />
                   <span>Get Free Quote</span>
                 </a>
-                <div className="flex items-center justify-center space-x-2 py-4 px-6 bg-white border border-slate-200 rounded-xl text-slate-700 font-semibold shadow-sm">
-                  <StarIcon className="w-5 h-5 text-yellow-400" />
+                <a
+                  href="https://maps.app.goo.gl/vJJ5Rv3U1wcApo9N6?g_st=ic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center space-x-2 bg-[#fff3e0] hover:bg-[#ffe0b2] text-slate-800 font-bold py-4 px-6 rounded-xl transition-all text-lg duration-200 border-[3px] border-[#fc6435] shadow-lg shadow-orange-100 transform hover:-translate-y-1"
+                >
+                  <StarIcon className="w-5 h-5 text-yellow-500" />
                   <span>5 Star Average Rating</span>
-                </div>
-              </div>
-
-              {/* Service Badge */}
-              <div className="inline-flex items-center space-x-3 text-sm font-semibold text-secondary-accent bg-orange-50 border border-orange-100 py-3 px-5 rounded-lg">
-                <HomeIcon className="w-5 h-5" />
-                <span>Zero-Hassle In-Home Service</span>
+                </a>
               </div>
             </motion.div>
 

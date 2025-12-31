@@ -1,4 +1,15 @@
-<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" fill="#2563eb"/>
-  <text x="16" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">TP</text>
-</svg> 
+<svg width="299" height="293" viewBox="0 0 299 293" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1">
+<g id="Icon+Bg">
+<g id="Group 1">
+<circle id="Ellipse 2" cx="149" cy="146" r="119" fill="#FFE9C7"/>
+<g id="TV">
+<path id="Rectangle 1" d="M195 101C207.703 101 218 111.297 218 124V188C218 200.703 207.703 211 195 211H104C91.2974 211 81 200.703 81 188V124C81 111.297 91.2974 101 104 101H195Z" stroke="#FF5521" stroke-width="20"/>
+<ellipse id="Ellipse 1" cx="148.5" cy="91.9207" rx="17.5" ry="13" fill="#FF5521"/>
+<path id="Line 1" d="M192.517 67.109C194.234 65.719 194.499 63.2003 193.109 61.4832C191.719 59.7662 189.2 59.5011 187.483 60.891L190 64L192.517 67.109ZM162.333 86.3969L164.85 89.5058L192.517 67.109L190 64L187.483 60.891L159.817 83.2879L162.333 86.3969Z" fill="#FF5521"/>
+<path id="Line 3" d="M104.483 67.109C102.766 65.719 102.501 63.2003 103.891 61.4832C105.281 59.7662 107.8 59.5011 109.517 60.891L107 64L104.483 67.109ZM134.667 86.3969L132.15 89.5058L104.483 67.109L107 64L109.517 60.891L137.183 83.2879L134.667 86.3969Z" fill="#FF5521"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
