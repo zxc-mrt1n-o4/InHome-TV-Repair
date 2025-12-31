@@ -44,6 +44,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', sizes: '192x192', type: 'image/png' },
+    ],
+  },
   // Local Business Schema
   other: {
     'geo.region': 'US-NC',
@@ -180,9 +186,20 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* WebSite Schema for Site Name in Search */}
+        <Script id="website-schema" type="application/ld+json" strategy="afterInteractive">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "inHome TV Repair",
+            "url": "https://inhometvrepair.com"
+          }
+          `}
+        </Script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0891b2" />
       </head>
