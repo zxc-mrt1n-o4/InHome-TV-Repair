@@ -19,10 +19,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://clt-tp.com'),
+  metadataBase: new URL('https://inhometvrepair.com'),
   title: 'In-Home TV Repair & Installation Charlotte NC | We Come to You',
   description: 'Professional in-home TV repair and installation services in Charlotte, NC. We come to you! No need to unplug or move your TV. Fix all brands - power issues, connectivity, smart TV setup, wall mounting. Same-day service available.',
-  keywords: 'in-home TV repair, TV installation, TV repair Charlotte NC, television repair at home, on-site TV repair, power board repair, HDMI repair, smart TV repair, TV wall mounting, Samsung TV repair, LG TV repair, Sony TV repair',
+  keywords: 'TV repair near me, TV repair Charlotte NC, in-home TV repair, mobile TV repair service, TV repair visit, television repair Charlotte, TV doctor Charlotte, TV fix near me, Samsung TV repair Charlotte, LG TV repair Charlotte, Sony TV repair Charlotte, Vizio TV repair, TCL TV repair, Hisense TV repair, Panasonic TV repair, Sharp TV repair, Philips TV repair, TV wall mounting Charlotte, TV mounting service, flatscreen repair, LED TV repair, OLED TV repair, QLED TV repair, plasma TV repair, LCD TV repair, 4K TV repair, 8K TV repair, smart TV repair, curved TV repair, TV power supply repair, TV main board repair, TV backlight repair, TV no picture, TV no sound, TV won\'t turn on, TV blinking red light, TV turns off by itself, affordable TV repair, cheap TV repair, fast TV repair, same day TV repair, emergency TV repair, weekend TV repair, home electronics repair, audio video repair, geek squad alternative, local TV repair shop, authorized TV repair, certified TV technician, TV mechanic, fix my TV, broken TV repair, 28202, 28203, 28204, 28205, 28206, 28207, 28208, 28209, 28210, 28211, 28212, 28213, 28214, 28215, 28216, 28217, 28226, 28227, 28244, 28262, 28269, 28270, 28273, 28277, 28278, 28280, 28282, Matthews TV repair, Pineville TV repair, Mint Hill TV repair, Huntersville TV repair, Ballantyne TV repair, SouthPark TV repair, Dilworth TV repair, Myers Park TV repair, NoDa TV repair, Plaza Midwood TV repair, University City TV repair',
   authors: [{ name: 'In-Home TV Repair & Installation' }],
   robots: 'index, follow',
   alternates: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: 'Expert in-home TV repair and installation services in Charlotte, NC. We come directly to you! All brands serviced. Same-day appointments available. Licensed & insured technicians.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://clt-tp.com',
+    url: 'https://inhometvrepair.com',
     siteName: 'In-Home TV Repair & Installation',
     images: [
       {
@@ -68,9 +68,9 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "In-Home TV Repair & Installation",
-            "image": "https://clt-tp.com/services/tv-repair.jpg",
-            "@id": "https://clt-tp.com",
-            "url": "https://clt-tp.com",
+            "image": "https://inhometvrepair.com/services/tv-repair.jpg",
+            "@id": "https://inhometvrepair.com",
+            "url": "https://inhometvrepair.com",
             "telephone": "+19809870005",
             "priceRange": "$$",
             "address": {
@@ -101,13 +101,43 @@ export default function RootLayout({
                 "closes": "21:00"
               }
             ],
-            "areaServed": {
-              "@type": "City",
-              "name": "Charlotte",
-              "@id": "https://www.wikidata.org/wiki/Q16565"
-            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Charlotte",
+                "@id": "https://www.wikidata.org/wiki/Q16565"
+              },
+              {
+                "@type": "City",
+                "name": "Matthews"
+              },
+              {
+                "@type": "City",
+                "name": "Pineville"
+              },
+              {
+                "@type": "City",
+                "name": "Mint Hill"
+              },
+              {
+                "@type": "City",
+                "name": "Huntersville"
+              },
+              {
+                "@type": "PostalCode",
+                "postalCode": "28277"
+              },
+              {
+                "@type": "PostalCode",
+                "postalCode": "28226"
+              },
+              {
+                "@type": "PostalCode",
+                "postalCode": "28210"
+              }
+            ],
             "serviceType": "TV Repair & Installation",
-            "description": "Professional TV repair and installation services in Charlotte, NC. We fix all brands - power issues, connectivity problems, smart TV setup, and professional mounting. Same-day service available.",
+            "description": "Top-rated in-home TV repair service in Charlotte, NC. We are the 'TV repair near me' experts who come to your house. Fix power issues, black screens, and smart TV setups for Samsung, LG, Sony, Vizio, and more. Call for a TV repair visit today.",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "TV Repair Services",
