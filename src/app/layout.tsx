@@ -46,8 +46,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'icon', url: '/favicon.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'shortcut icon', url: '/favicon.png', type: 'image/png' },
+      { rel: 'icon', url: '/favicon.svg', type: 'image/svg+xml' },
     ],
   },
   // Local Business Schema
@@ -187,12 +188,13 @@ export default function RootLayout({
         </Script>
 
         {/* WebSite Schema for Site Name in Search */}
-        <Script id="website-schema" type="application/ld+json" strategy="afterInteractive">
+        <Script id="website-schema" type="application/ld+json" strategy="beforeInteractive">
           {`
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "inHome TV Repair",
+            "name": "In-Home TV Repair & Installation",
+            "alternateName": "In-Home TV Repair Charlotte",
             "url": "https://inhometvrepair.com"
           }
           `}
