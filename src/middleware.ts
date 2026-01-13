@@ -1,7 +1,15 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(_request: NextRequest) {
+export function middleware(request: NextRequest) {
+  // Force HTTPS redirect with proper 301 status
+  if (request.nextUrl.protocol === 'http:' && process.env.NODE_ENV === 'production') {
+    return NextResponse.redirect(
+      `https://${request.nextUrl.host}${request.nextUrl.pathname}${request.nextUrl.search}`,
+      301
+    );
+  }
+
   const response = NextResponse.next();
   
   // Add security headers for all pages
