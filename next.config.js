@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
   // Enable experimental features for better performance
   experimental: {
     optimizePackageImports: ['@heroicons/react'],
