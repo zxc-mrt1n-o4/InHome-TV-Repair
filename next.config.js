@@ -8,18 +8,7 @@ const nextConfig = {
   
   // Optimize images
   images: {
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    loader: 'default',   // стандартный loader
-    path: '/',           // <- ключевой момент: локальные файлы берём из public
-    unoptimized: false,  // оставляем оптимизацию включенной
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',  // если в будущем картинки с внешних сайтов
-      },
-    ],
+    unoptimized: true,  // оставляем оптимизацию включенной
   },
   // Enable compression
   compress: true,
