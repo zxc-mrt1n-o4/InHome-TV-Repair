@@ -1,6 +1,8 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 
-// Telegram Bot configuration
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '';
 
@@ -10,9 +12,6 @@ interface CallbackRequest {
   service_type: string;
 }
 
-/**
- * Send message to Telegram group
- */
 async function sendTelegramMessage(message: string): Promise<boolean> {
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
     console.error('Telegram credentials not configured');
@@ -21,7 +20,7 @@ async function sendTelegramMessage(message: string): Promise<boolean> {
 
   try {
     const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-    
+
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -31,6 +30,7 @@ async function sendTelegramMessage(message: string): Promise<boolean> {
         chat_id: TELEGRAM_CHAT_ID,
         text: message,
         parse_mode: 'HTML',
+        disable_web_page_preview: true,
       }),
     });
 
@@ -47,9 +47,6 @@ async function sendTelegramMessage(message: string): Promise<boolean> {
   }
 }
 
-/**
- * Format callback request as Telegram message
- */
 function formatTelegramMessage(data: CallbackRequest): string {
   const timestamp = new Date().toLocaleString('en-US', {
     timeZone: 'America/New_York',
@@ -58,59 +55,43 @@ function formatTelegramMessage(data: CallbackRequest): string {
   });
 
   return `
-🔔 <b>New Service Request</b>
+<b>New Service Request</b>
 
-👤 <b>Name:</b> ${data.name}
-📞 <b>Phone:</b> ${data.phone}
-🛠 <b>Service:</b> ${data.service_type}
-🕐 <b>Time:</b> ${timestamp}
+<b>Name:</b> ${data.name}
+<b>Phone:</b> ${data.phone}
+<b>Service:</b> ${data.service_type}
+<b>Time:</b> ${timestamp}
 
-━━━━━━━━━━━━━━━━
-📍 Please call back within 30 minutes
+------------------------------
+Please call back within 30 minutes
   `.trim();
 }
 
-/**
- * POST endpoint for TV repair callback requests
- */
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json() as CallbackRequest;
+    const body = (await request.json()) as CallbackRequest;
 
-    // Validate required fields
     if (!body.name || !body.phone) {
-      return NextResponse.json(
-        { error: 'Name and phone are required' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Name and phone are required' }, { status: 400 });
     }
 
-    // Format and send Telegram message
     const message = formatTelegramMessage(body);
     const sent = await sendTelegramMessage(message);
 
     if (!sent) {
       console.error('Failed to send Telegram notification');
-      // Still return success to user, but log the error
     }
 
     return NextResponse.json({
       success: true,
       message: 'Callback request received',
     });
-
   } catch (error) {
     console.error('Error processing callback request:', error);
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
 
-/**
- * GET endpoint - returns API info
- */
 export async function GET() {
   return NextResponse.json({
     service: 'TV Repair Callback API',
@@ -118,4 +99,3 @@ export async function GET() {
     status: 'active',
   });
 }
-

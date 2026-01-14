@@ -247,22 +247,22 @@ Update in `src/app/page.tsx`:
 ┌─────────────────────────────────────────┐
 │         Next.js Server Process          │
 │                                         │
-│  ┌────────────────────────────────────┐│
-│  │     Landing Page (React)           ││
-│  │                                    ││
-│  │  • Hero with IN-HOME badge         ││
-│  │  • Common TV problems              ││
-│  │  • Why choose us                   ││
-│  │  • Contact form (Name + Phone)     ││
-│  └────────────────────────────────────┘│
+│  ┌────────────────────────────────────┐ │
+│  │     Landing Page (React)           │ │
+│  │                                    │ │
+│  │  • Hero with IN-HOME badge         │ │
+│  │  • Common TV problems              │ │
+│  │  • Why choose us                   │ │
+│  │  • Contact form (Name + Phone)     │ │
+│  └────────────────────────────────────┘ │
 │                                         │
-│  ┌────────────────────────────────────┐│
-│  │  Telegram Bot (Integrated)         ││
-│  │                                    ││
-│  │  • Auto-starts with Next.js        ││
-│  │  • Listens for commands            ││
-│  │  • Sends notifications             ││
-│  └────────────────────────────────────┘│
+│  ┌────────────────────────────────────┐ │
+│  │  Telegram Bot (Integrated)         │ │
+│  │                                    │ │
+│  │  • Auto-starts with Next.js        │ │
+│  │  • Listens for commands            │ │
+│  │  • Sends notifications             │ │
+│  └────────────────────────────────────┘ │
 └─────────────────────────────────────────┘
 ```
 
@@ -363,16 +363,16 @@ All features are documented in the code with comments. Key sections:
 
 Before going live:
 
-- [ ] Created `.env.local` with Telegram credentials
-- [ ] Tested form submission locally
-- [ ] Verified Telegram notifications work
-- [ ] Updated domain in `layout.tsx` and `sitemap.ts`
-- [ ] Added hero image at `public/services/tv-repair.webp`
-- [ ] Tested on mobile device
-- [ ] Set up Google My Business
-- [ ] Deployed to Railway/Vercel
-- [ ] Added environment variables in hosting platform
-- [ ] Tested production deployment
+- [X] Created `.env.local` with Telegram credentials
+- [X] Tested form submission locally
+- [X] Verified Telegram notifications work
+- [X] Updated domain in `layout.tsx` and `sitemap.ts`
+- [X] Added hero image at `public/services/tv-repair.webp`
+- [X] Tested on mobile device
+- [X] Set up Google My Business
+- [X] Deployed to Railway/Vercel
+- [X] Added environment variables in hosting platform
+- [X] Tested production deployment
 
 ---
 

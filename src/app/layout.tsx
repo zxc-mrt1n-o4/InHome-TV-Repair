@@ -4,13 +4,6 @@ import './globals.css';
 import QueryProvider from '@/providers/QueryProvider';
 import Script from 'next/script';
 
-// Initialize Telegram bot when server starts
-if (typeof window === 'undefined') {
-  import('@/lib/telegram-bot').then(({ initializeTelegramBot }) => {
-    initializeTelegramBot();
-  });
-}
-
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -195,7 +188,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#0891b2" />
+        <meta name="theme-color" content="#FF5722" />
       </head>
       <body className="antialiased bg-white">
         <QueryProvider>

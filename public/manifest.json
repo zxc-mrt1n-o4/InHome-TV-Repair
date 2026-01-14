@@ -1,11 +1,11 @@
 {
-  "name": "TRUE PROS",
-  "short_name": "TRUE PROS",
-  "description": "Professional Appliance Repair Services",
+  "name": "inHome TV Repair",
+  "short_name": "inHome",
+  "description": "Professional TV Repair Services With Visit",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2563eb",
+  "background_color": "#FFF3E0",
+  "theme_color": "#FF5722",
   "icons": [
     {
       "src": "/favicon.svg",
