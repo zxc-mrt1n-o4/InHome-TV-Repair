@@ -234,7 +234,7 @@ export default function TVRepairLanding() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-1 hover:rotate-0 transition-transform duration-500">
                 <Image
-                  src="/services/tv-repair.webp"
+                  src="/services/tv-repair.png"
                   alt="Professional TV Repair Technician"
                   width={600}
                   height={450}
@@ -260,7 +260,7 @@ export default function TVRepairLanding() {
             {/* Mobile Image (shown only on small screens) */}
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl lg:hidden mb-4">
               <Image
-                src="/services/tv-repair.webp"
+                src="/services/tv-repair.png"
                 alt="TV Repair Service"
                 fill
                 className="object-cover"

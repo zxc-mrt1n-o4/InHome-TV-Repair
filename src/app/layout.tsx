@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'In-Home TV Repair & Installation',
     images: [
       {
-        url: '/services/tv-repair.jpg', // Ensure this image exists or use a valid one
+        url: '/services/tv-repair.png', // Ensure this image exists or use a valid one
         width: 1200,
         height: 630,
         alt: 'In-Home TV Repair Technician in Charlotte',
@@ -68,7 +68,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "In-Home TV Repair & Installation",
-            "image": "https://inhometvrepair.com/services/tv-repair.jpg",
+            "image": "https://inhometvrepair.com/services/tv-repair.png",
             "@id": "https://inhometvrepair.com",
             "url": "https://inhometvrepair.com",
             "telephone": "+19809870005",
