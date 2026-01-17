@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://inhometvrepair.com',
-    siteName: 'In-Home TV Repair & Installation',
+    siteName: 'inHomeTvRepair',
     images: [
       {
         url: '/services/tv-repair.png', // Ensure this image exists or use a valid one
@@ -67,7 +67,7 @@ export default function RootLayout({
           {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "In-Home TV Repair & Installation",
+            "name": "inHomeTvRepair",
             "image": "https://inhometvrepair.com/services/tv-repair.png",
             "@id": "https://inhometvrepair.com",
             "url": "https://inhometvrepair.com",
@@ -83,8 +83,8 @@ export default function RootLayout({
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 35.2271,
-              "longitude": -80.8431
+              "latitude": 35.0266, 
+              "longitude": -80.8494
             },
             "openingHoursSpecification": [
               {
@@ -128,7 +128,7 @@ export default function RootLayout({
                 "postalCode": "28277"
               }
             ],
-            "serviceType": "TV Repair & Installation Service",
+            "serviceType": "TV Repair",
             "description": "Top-rated in-home TV repair service in Charlotte, NC. We are the 'TV repair near me' experts who come to your house. Fix power issues, black screens, and smart TV setups for Samsung, LG, Sony, Vizio, and more. Call for a TV repair visit today.",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
@@ -178,7 +178,7 @@ export default function RootLayout({
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "In-Home TV Repair & Installation",
+            "name": "In-Home TV Repair",
             "alternateName": "In-Home TV Repair Charlotte",
             "url": "https://inhometvrepair.com"
           }
