@@ -220,7 +220,7 @@ export default function TVRepairLanding() {
                   className="inline-flex items-center justify-center space-x-2 bg-[#fff3e0] hover:bg-[#ffe0b2] text-slate-800 font-bold py-4 px-6 rounded-xl transition-all text-lg duration-200 border-[3px] border-[#fc6435] shadow-lg shadow-orange-100 transform hover:-translate-y-1"
                 >
                   <StarIcon className="w-5 h-5 text-yellow-500" />
-                  <span>5 Star Average Rating</span>
+                  <span>5 Star Google Rating</span>
                 </a>
               </div>
             </motion.div>
