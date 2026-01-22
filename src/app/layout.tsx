@@ -83,8 +83,8 @@ export default function RootLayout({
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 35.2271,
-              "longitude": -80.8431
+              "latitude": 35.0266, 
+              "longitude": -80.8494
             },
             "openingHoursSpecification": [
               {
@@ -128,7 +128,7 @@ export default function RootLayout({
                 "postalCode": "28277"
               }
             ],
-            "serviceType": "TV Repair & Installation Service",
+            "serviceType": "TV Repair",
             "description": "Top-rated in-home TV repair service in Charlotte, NC. We are the 'TV repair near me' experts who come to your house. Fix power issues, black screens, and smart TV setups for Samsung, LG, Sony, Vizio, and more. Call for a TV repair visit today.",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
