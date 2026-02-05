@@ -128,7 +128,7 @@ export default function TVRepairLanding() {
               <div className="relative w-12 h-12 flex-shrink-0">
                 <Image
                   src="/icon.svg"
-                  alt="In-Home TV Repair Icon"
+                  alt="TV Repair Charlotte NC - In-Home Service Icon"
                   fill
                   className="object-contain"
                 />
@@ -197,12 +197,12 @@ export default function TVRepairLanding() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 mb-6 leading-tight tracking-tight">
-                Expert <span className="text-primary">TV Repair</span> <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-600">At Your Doorstep</span>
+                Expert <span className="text-primary">In-Home TV Repair</span> <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-600">in Charlotte, NC</span>
               </h1>
 
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-lg">
-                Don't haul your TV to a shop. We bring the repair shop to you. Professional diagnostics and repair for all brands, right in your living room.
+                Don't haul your TV to a shop. We bring the repair shop to you. Professional diagnostics and repair for Samsung, LG, Sony, Vizio and all major brands, right in your living room.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -235,7 +235,7 @@ export default function TVRepairLanding() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-1 hover:rotate-0 transition-transform duration-500">
                 <Image
                   src="/services/tv-repair.png"
-                  alt="Professional TV Repair Technician"
+                  alt="Professional TV Repair Technician in Charlotte NC"
                   width={600}
                   height={450}
                   className="object-cover w-full h-auto"
@@ -261,7 +261,7 @@ export default function TVRepairLanding() {
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl lg:hidden mb-4">
               <Image
                 src="/services/tv-repair.png"
-                alt="TV Repair Service"
+                alt="TV Repair Service Charlotte NC"
                 fill
                 className="object-cover"
                 priority
