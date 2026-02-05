@@ -13,16 +13,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://inhometvrepair.com'),
-  title: 'TV Repair Charlotte NC | Same Day Service | In-Home TV Repair',
+  title: 'inHome TV Repair | TV Repair Charlotte NC | Same Day Service',
   description: 'Professional in-home TV repair and installation services in Charlotte, NC. We come to you! No need to unplug or move your TV. Fix all brands - power issues, connectivity, smart TV setup, wall mounting. Same-day service available.',
-  keywords: 'TV repair near me, TV repair Charlotte NC, in-home TV repair, mobile TV repair service, TV repair visit, television repair Charlotte, TV doctor Charlotte, TV fix near me, Samsung TV repair Charlotte, LG TV repair Charlotte, Sony TV repair Charlotte, Vizio TV repair, TCL TV repair, Hisense TV repair, Panasonic TV repair, Sharp TV repair, Philips TV repair, TV wall mounting Charlotte, TV mounting service, flatscreen repair, LED TV repair, OLED TV repair, QLED TV repair, plasma TV repair, LCD TV repair, 4K TV repair, 8K TV repair, smart TV repair, curved TV repair, TV power supply repair, TV main board repair, TV backlight repair, TV no picture, TV no sound, TV won\'t turn on, TV blinking red light, TV turns off by itself, affordable TV repair, cheap TV repair, fast TV repair, same day TV repair, emergency TV repair, weekend TV repair, home electronics repair, audio video repair, geek squad alternative, local TV repair shop, authorized TV repair, certified TV technician, TV mechanic, fix my TV, broken TV repair, 28202, 28203, 28204, 28205, 28206, 28207, 28208, 28209, 28210, 28211, 28212, 28213, 28214, 28215, 28216, 28217, 28226, 28227, 28244, 28262, 28269, 28270, 28273, 28277, 28278, 28280, 28282, Matthews TV repair, Pineville TV repair, Mint Hill TV repair, Huntersville TV repair, Ballantyne TV repair, SouthPark TV repair, Dilworth TV repair, Myers Park TV repair, NoDa TV repair, Plaza Midwood TV repair, University City TV repair',
   authors: [{ name: 'inHome TV Repair' }],
   robots: 'index, follow',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'TV Repair Charlotte NC | Same Day Service | In-Home TV Repair',
+    title: 'inHome TV Repair | TV Repair Charlotte NC | Same Day Service',
     description: 'Expert in-home TV repair and installation services in Charlotte, NC. We come directly to you! All brands serviced. Same-day appointments available. Licensed & insured technicians.',
     type: 'website',
     locale: 'en_US',
@@ -69,8 +68,11 @@ export default function RootLayout({
             "@type": "LocalBusiness",
             "name": "inHome TV Repair",
             "image": "https://inhometvrepair.com/services/tv-repair.png",
-            "@id": "https://inhometvrepair.com",
+            "@id": "https://inhometvrepair.com#localbusiness",
             "url": "https://inhometvrepair.com",
+            "isPartOf": {
+              "@id": "https://inhometvrepair.com"
+            },
             "telephone": "+19809870005",
             "priceRange": "$$",
             "address": {
@@ -109,11 +111,27 @@ export default function RootLayout({
               },
               {
                 "@type": "City",
+                "name": "Monroe"
+              },
+              {
+                "@type": "City",
+                "name": "Concord"
+              },
+              {
+                "@type": "City",
+                "name": "Gastonia"
+              },
+              {
+                "@type": "City",
                 "name": "Matthews"
               },
               {
                 "@type": "City",
-                "name": "Pineville"
+                "name": "Mt Holly"
+              },
+              {
+                "@type": "City",
+                "name": "Fort Mill"
               },
               {
                 "@type": "City",
@@ -121,11 +139,67 @@ export default function RootLayout({
               },
               {
                 "@type": "City",
+                "name": "Pineville"
+              },
+              {
+                "@type": "City",
+                "name": "Rock Hill"
+              },
+              {
+                "@type": "City",
+                "name": "Stallings"
+              },
+              {
+                "@type": "City",
+                "name": "Weddington"
+              },
+              {
+                "@type": "City",
+                "name": "Indian Trail"
+              },
+              {
+                "@type": "City",
+                "name": "Waxhaw"
+              },
+              {
+                "@type": "City",
+                "name": "Wesley Chapel"
+              },
+              {
+                "@type": "City",
+                "name": "Tega Cay"
+              },
+              {
+                "@type": "City",
+                "name": "Mineral Springs"
+              },
+              {
+                "@type": "City",
+                "name": "Indian Land"
+              },
+              {
+                "@type": "City",
                 "name": "Huntersville"
               },
               {
+                "@type": "City",
+                "name": "Lake Norman"
+              },
+              {
                 "@type": "PostalCode",
-                "postalCode": "28277"
+                "postalCode": "28173"
+              },
+              {
+                "@type": "PostalCode",
+                "postalCode": "29708"
+              },
+              {
+                "@type": "PostalCode",
+                "postalCode": "29707"
+              },
+              {
+                "@type": "PostalCode",
+                "postalCode": "28078"
               }
             ],
             "serviceType": "TV Repair",
@@ -172,15 +246,28 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* WebSite Schema for Site Name in Search */}
+        {/* WebSite Schema for Site Name in Search - Primary Entity */}
         <Script id="website-schema" type="application/ld+json" strategy="beforeInteractive">
           {`
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
+            "@id": "https://inhometvrepair.com",
             "name": "inHome TV Repair",
-            "alternateName": "inHome TV Repair Charlotte",
-            "url": "https://inhometvrepair.com"
+            "alternateName": "inHome TV Repair",
+            "url": "https://inhometvrepair.com",
+            "description": "Professional in-home TV repair and installation services. We come to you for all TV repair needs.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://inhometvrepair.com/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            },
+            "sameAs": [
+              "https://www.google.com/search?q=inHome+TV+Repair+Charlotte"
+            ]
           }
           `}
         </Script>
